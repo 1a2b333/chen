@@ -1,1 +1,8 @@
-t est
+This can be anything from poorly written algorithms, a lack of
+understanding about the way Python works, use of incorrect or
+inefficient data structures, doing network accesses or other
+unpredictable work at import time, etc.  The bottom line I think is that
+you have to measure what you've got in production, and attack the
+hotspots.  For example, I love and can't wait to use Python 3.7's `-X
+importtime` flag to measure regressions in CLI start up times due to
+unfortunate things appearing in module globals.
